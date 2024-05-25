@@ -3,6 +3,10 @@ def kelime_ara(metin, kelime):
     Verilen metin içinde belirli bir kelimeyi arar ve kelimenin geçtiği tüm pozisyonları döner.
     """
     pozisyonlar = []
+
+    metin = metin.lower()
+    kelime = kelime.lower()
+
     index = metin.find(kelime)
 
     while index != -1:
